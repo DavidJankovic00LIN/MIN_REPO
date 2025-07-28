@@ -4,6 +4,7 @@ import About from "./components/about"
 import MyTours from "./components/MyTours";
 import ImageSlider from "./components/ImageSlider";
 import TourSlider from "./components/TourSlides";
+import ActiveTours from "./components/ActiveTours";
 
 import img1 from "@/foto/1.jpg";
 import img2 from "@/foto/2.jpg";
@@ -50,6 +51,23 @@ export default function Home() {
   { src: img16, alt: "Tura 16" },
 ]
 
+const slides = [
+  {
+    image: img1,
+    title: "Manastir Studenica",
+    text: "Manastir Studenica je muški manastir Srpske pravoslavne crkve...",
+    button1: "Rezervisi",
+    button2: "Posalji upit"
+  },
+  {
+    image: img2,
+    title: "Manastir Žiča",
+    text: "Manastir Žiča je srpski pravoslavni manastir iz 13. veka...",
+    button1: "Pogledaj više",
+    button2: "Kontaktiraj"
+  }
+]
+
 const items = [
   {
     src: img1,
@@ -81,6 +99,7 @@ const items = [
     <MyTours />
     <ImageSlider images={images} />
     <TourSlider items={items}/>
+    <ActiveTours slides={slides}  />
     </>
   );
 }
