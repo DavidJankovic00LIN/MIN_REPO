@@ -17,14 +17,14 @@ const MyTours = () => {
   return (
     <div className="bg-white text-center z-10 px-4 w-full flex flex-col items-center">
       <div className="max-w-6xl w-full">
-        <h2 className="text-4xl text-black font-bold mb-6">O meni</h2>
+        <h2 className="text-4xl text-black font-bold mb-6 py-[80px]">Moje ture</h2>
         <p className="text-lg text-white leading-relaxed bg-black/70 p-6 rounded-md backdrop-blur-sm">
           Vodila sam raznovrsne ture kroz istorijski Beograd, prirodna čuda istočne Srbije i kulturne dragulje Vojvodine.
           Posebno iskustvo mi je bila organizacija tura kroz Kapadokiju i Istanbul u Turskoj.
           Svaka tura je prilagođena interesovanjima i tempu grupe sa autentičnim lokalnim doživljajem.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-[85px]">
           {images.map((item, i) => (
             <div
               key={i}

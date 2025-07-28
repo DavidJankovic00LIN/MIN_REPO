@@ -33,7 +33,7 @@ const About = () => {
 
       {/* Sadržaj preko slike */}
       <div className="text-white text-center z-10 px-4">
-        <h2 className="text-4xl font-bold mb-6">O meni</h2>
+        <h2 className="text-4xl font-bold mb-6 py-[30px]">O meni</h2>
         <p className="text-lg leading-relaxed bg-black/40 p-12 rounded-md backdrop-blur-sm">
       Dobrodošli u deo stranice gde ćete saznati više o meni i mojim turama.
       Cilj mi je da svaki gost ponese autentično i nezaboravno iskustvo!
@@ -41,7 +41,7 @@ const About = () => {
 
     <br/>
 
-    <h2 className="text-4xl font-bold mb-6">Moje prednosti kao vodič</h2>
+    <h2 className="text-4xl font-bold mb-6 py-[30px]">Moje prednosti kao vodič</h2>
 
 <div className="flex flex-col items-center gap-4">
   <div className="flex flex-wrap justify-center gap-4">
