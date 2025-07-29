@@ -5,6 +5,9 @@ import MyTours from "./components/MyTours";
 import ImageSlider from "./components/ImageSlider";
 import TourSlider from "./components/TourSlides";
 import ActiveTours from "./components/ActiveTours";
+import Kontakt from "./components/Kontakt";
+import Footer from "./components/Footer";
+import FeedBack from "./components/Feedback";
 
 import img1 from "@/foto/1.jpg";
 import img2 from "@/foto/2.jpg";
@@ -100,6 +103,9 @@ const items = [
     <ImageSlider images={images} />
     <TourSlider items={items}/>
     <ActiveTours slides={slides}  />
+    <Kontakt />
+    <Footer />
+    <FeedBack />
     </>
   );
 }
