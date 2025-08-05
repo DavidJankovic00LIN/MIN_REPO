@@ -80,9 +80,9 @@ const Kontakt = () => {
         kontakt forme ili putem neke od naših društvenih mreža.
       </p>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {/* Leva kolona */}
-        <div className="col-span-1 bg-gray-200 p-6 rounded-lg flex flex-col gap-6">
+        <div className="lg:col-span-1 bg-gray-200 p-6 rounded-lg flex flex-col gap-6">
           <h3 className="text-black text-2xl font-semibold mb-4">
             Društvene mreže
           </h3>
@@ -102,7 +102,7 @@ const Kontakt = () => {
         
          
 
-            <div className="col-span-2 bg-gray-100 flex items-center justify-center rounded-lg p-8">
+            <div className="lg:col-span-2 bg-gray-100 flex items-center justify-center rounded-lg p-8">
                 <form className="w-full max-w-lg space-y-4">
                     <div>
                     <label className="block text-gray-700 font-semibold mb-1">
