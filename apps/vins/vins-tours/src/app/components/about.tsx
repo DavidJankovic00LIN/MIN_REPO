@@ -33,7 +33,7 @@ const About = () => {
 
       {/* Sadržaj preko slike */}
       <div className="text-white text-center z-10 px-4">
-        <h2 className="text-4xl font-bold mb-6 py-[30px]">O meni</h2>
+        <h2 className="text-2xl font-semibold bg-[#3c324a] text-white px-4 py-2 mb-4 inline-block rounded">O meni</h2>
         <p className="text-lg leading-relaxed bg-black/40 p-12 rounded-md backdrop-blur-sm">
       Dobrodošli u deo stranice gde ćete saznati više o meni i mojim turama.
       Cilj mi je da svaki gost ponese autentično i nezaboravno iskustvo!

@@ -13,9 +13,9 @@ const images = [
 
 const FeedBack = () =>{
     return (
-        <div className="bg-white text-center z-10 px-4 w-full flex flex-col items-center">
-              <div className="max-w-6xl w-full">
-                <h2 className="text-4xl text-black font-bold mb-6 py-[80px]">Utisci</h2>
+        <div className="bg-white text-center z-10 px-4 w-full flex flex-col items-center py-[25px]">
+              <div className="max-w-6xl w-full py-[50px]">
+                <h2 className="text-2xl font-semibold bg-[#3c324a] text-white px-4 py-2 mb-4 inline-block rounded">Utisci</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-[85px]">
                   {images.map((item, i) => (
                     <div
