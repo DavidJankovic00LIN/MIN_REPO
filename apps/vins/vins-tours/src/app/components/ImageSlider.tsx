@@ -67,7 +67,8 @@ function ImageSlider({ images }: Props) {
     <div className="relative w-full overflow-hidden">
       <div
         ref={sliderRef}
-        className="flex overflow-x-auto scrollbar-hide transition-transform duration-500 ease-in-out"
+        className="flex overflow-x-auto transition-transform duration-500 ease-in-out scrollbar-none"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {[...images, ...images].map((img, idx) => (
           <div
