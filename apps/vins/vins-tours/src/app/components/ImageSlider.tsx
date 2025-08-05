@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useCallback } from "react"
 import Image from "next/image"
 import type { StaticImageData } from "next/image";
 
@@ -14,7 +14,7 @@ function ImageSlider({ images }: Props) {
   const scrollInterval = useRef<ReturnType<typeof setInterval> | null>(null)
   const autoScrollInterval = useRef<number | null>(null)
 
-  const autoScroll = () => {
+  const autoScroll = useCallback(() => {
     if (sliderRef.current) {
       sliderRef.current.scrollLeft += 0.5
       const { scrollLeft, scrollWidth } = sliderRef.current
@@ -24,11 +24,11 @@ function ImageSlider({ images }: Props) {
       }
     }
     autoScrollInterval.current = requestAnimationFrame(autoScroll)
-  }
+  }, [])
 
-  const startAutoScroll = () => {
+  const startAutoScroll = useCallback(() => {
     autoScrollInterval.current = requestAnimationFrame(autoScroll)
-  }
+  }, [autoScroll])
 
   const stopAutoScroll = () => {
     if (autoScrollInterval.current) cancelAnimationFrame(autoScrollInterval.current)
@@ -61,7 +61,7 @@ function ImageSlider({ images }: Props) {
   useEffect(() => {
     startAutoScroll()
     return () => stopAutoScroll()
-  }, [])
+  }, [startAutoScroll])
 
   return (
     <div className="relative w-full overflow-hidden">

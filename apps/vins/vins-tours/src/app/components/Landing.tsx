@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image'
-import Link from 'next/link'
 import BackGround from "@/foto/privremena.png";
 import Maya from "@/foto/maya.jpg";
 
