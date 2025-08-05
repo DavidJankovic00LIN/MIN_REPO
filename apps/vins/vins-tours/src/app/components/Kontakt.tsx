@@ -73,9 +73,9 @@ const Kontakt = () => {
   ];
 
   return (
-    <div className="bg-[#3c344b] p-8 min-h-screen">
-      <h1 className="text-white text-center py-5 text-5xl font-bold">Kontakt</h1>
-      <p className="text-lg max-w-3xl mx-auto text-center text-white mb-8">
+    <div className="bg-[#3c344b] p-4 lg:p-8 min-h-screen">
+      <h1 className="text-white text-center py-5 text-3xl lg:text-5xl font-bold">Kontakt</h1>
+      <p className="text-base lg:text-lg max-w-3xl mx-auto text-center text-white mb-8 px-4">
         Za sve dodatne informacije budite slobodni da nas kontaktirate putem
         kontakt forme ili putem neke od naših društvenih mreža.
       </p>
@@ -170,10 +170,12 @@ const Kontakt = () => {
                 <div className="flex-grow h-px bg-gradient-to-l from-gray-400 via-gray-400 to-transparent"></div>
                 <div className="flex-grow h-px bg-gradient-to-r from-gray-400 via-gray-400 to-transparent"></div>
             </div>
-         <h2 className="px-4 text-4xl font-bold text-white whitespace-nowrap  text-center">Autenticna tura pocinje sa ljudima!</h2>
+         <h2 className="px-4 text-2xl lg:text-4xl font-bold text-white text-center break-words">Autenticna tura pocinje sa ljudima!</h2>
 
 
      </div>
+
+     
     
   );
 };

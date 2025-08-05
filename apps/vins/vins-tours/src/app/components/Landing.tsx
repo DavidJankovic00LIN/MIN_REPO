@@ -6,7 +6,7 @@ import Maya from "@/foto/maya.jpg";
 
 const Landing = () => {
   return (
-    <div className="hero min-h-screen relative bg-black/40 mt-[82.5px]">
+           <div className="hero min-h-screen relative bg-black/40 mt-[60px] lg:mt-[82.5px]">
       
       {/* Background image */}
       <Image
