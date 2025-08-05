@@ -37,3 +37,10 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Responsive positioning for landing buttons */
+@media (max-width: 1279px) {
+  .landing-buttons {
+    bottom: -20px !important;
+  }
+}
